@@ -12,7 +12,7 @@ Pipeline ETL para procesamiento de datos de órdenes, productos y usuarios.
 ### 1. Clonar el repositorio
 
 ```bash
-git clone <url-del-repositorio>
+git https://github.com/AndresRoblesB/Juju-prueba-tecnica.git
 cd etl-test
 ```
 
