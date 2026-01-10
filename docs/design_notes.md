@@ -39,6 +39,9 @@ Los datos de prueba van desde 2025-08-20 hasta el 2025-08-27, para que se tenga 
 
 **fact_order**: Particionado por `order_date` (YYYY-MM-DD) usando Hive-style partitions pensando en que se usará en la nube con herramientas cómo S3 o Athena
 
+Se manejó dos tablas para fact_order: Fact_order_header y fact_order_detail. Esto se hizo para normalizar la información y evitar repetir registros en la tabla debido a al campo items. De esta forma queda mucho mejor organizada la información y se disminuyen los errores.
+
+
 ## 5. Auditoría
 
 Para este caso se realizan validacioes básicas y se usa print() para lanzar algunas alertas, sin embargo, en producción mi recomendación es usar la libería de Python Logging para guardar logs de forma más profesional y si está en la nube (en un EC2 tal vez) apoyarse en CloudWatch (usando el agent) para guardar los logs y realizar las alertas en bases reglas definidas allá.
