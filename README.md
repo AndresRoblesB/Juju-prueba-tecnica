@@ -13,7 +13,6 @@ Pipeline ETL para procesamiento de datos de órdenes, productos y usuarios.
 
 ```bash
 git clone https://github.com/AndresRoblesB/Juju-prueba-tecnica.git
-cd etl-test
 ```
 
 ### 2. Crear entorno virtual
@@ -25,6 +24,7 @@ python -m venv .venv
 ### 3. Activar el entorno virtual
 
 ```bash
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 .venv\Scripts\activate
 ```
 
@@ -67,17 +67,17 @@ El pipeline ejecutará las siguientes etapas:
 ## 📁 Estructura del Proyecto
 
 ```
-ETL-TEST/
+JUJU-PRUEBA-TECNICA/
 ├── .venv/                  # Entorno virtual (no incluido en git)
 ├── docs/                   # Documentación
 ├── output/                 # Datos procesados
 │   ├── raw/               # Datos extraídos
 │   └── curated/           # Datos transformados
 ├── sample_data/           # Datos de ejemplo
-├── sql/                   # Scripts SQL
+├── sql/                   # Scripts SQL (No se usó en este caso)
 ├── src/                   # Código fuente
 │   ├── api_client.py     # Cliente para extracción de datos
-│   ├── db.py             # Funciones de base de datos
+│   ├── db.py             # Funciones de base de datos (No se usó en este caso)
 │   ├── etl_job.py        # Pipeline principal
 │   └── transforms.py     # Transformaciones de datos
 ├── tests/                 # Tests unitarios
@@ -88,7 +88,7 @@ ETL-TEST/
 ## 🧪 Ejecutar Tests
 
 ```bash
-pytest
+pytest tests/test_transforms.py
 ```
 
 ## 📦 Dependencias Principales
@@ -109,12 +109,22 @@ deactivate
 
 - Los archivos de salida se generan en formato Parquet para optimizar el almacenamiento y la velocidad de lectura
 - Asegúrate de tener el entorno virtual activado antes de ejecutar el pipeline
-- La carpeta `output/` se crea automáticamente si no existe
 
 ## 🐳 Docker (Opcional)
 
-Si prefieres usar Docker, consulta el archivo `docker-compose.yml` en el repositorio.
+Si prefieres usar Docker, consulta el archivo `docker-compose.yml` en el repositorio y corre los siguientes comandos
+
+```bash
+docker compose build
+```
+
+```bash
+docker compose run --rm etl python -m src.etl_job 2025-08-20
+```
+
+
+.
 
 ---
 
-**Proyecto ETL-TEST** | Procesamiento eficiente de datos
+**Proyecto JUJU-PRUEBA-TECNICA** | Procesamiento eficiente de datos
