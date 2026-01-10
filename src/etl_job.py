@@ -1,6 +1,6 @@
 import sys
-from api_client import sample_to_raw_orders, sample_to_raw_products, sample_to_raw_users
-from transforms import run_transformations
+from src.api_client import sample_to_raw_orders, sample_to_raw_products, sample_to_raw_users
+from src.transforms import run_transformations
 
 
 def main(since):
