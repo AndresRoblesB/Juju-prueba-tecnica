@@ -1,0 +1,13 @@
+# docker-compose.yml
+version: '3.8'
+
+services:
+  etl:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./output:/app/output
+    environment:
+      - SINCE_DATE=${SINCE_DATE:-2025-08-20}
+    command: python src/etl_job.py ${SINCE_DATE:-2025-08-20}
