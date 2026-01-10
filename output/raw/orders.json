@@ -2,110 +2,170 @@
   {
     "order_id": "o_1001",
     "user_id": "u_1",
-    "amount": 125.50,
+    "amount": 125.5,
     "currency": "USD",
     "created_at": "2025-08-20T15:23:10Z",
     "items": [
-      { "sku": "p_1",   "qty": 2, "price": 30.00 },
-      { "sku": "p_5", "qty": 1, "price": 20.00 }
+      {
+        "sku": "p_1",
+        "qty": 2,
+        "price": 30.0
+      },
+      {
+        "sku": "p_5",
+        "qty": 1,
+        "price": 20.0
+      }
     ],
-    "metadata": { "source": "api", "promo": null }
-  },    
+    "metadata": {
+      "source": "api",
+      "promo": null
+    }
+  },
   {
     "order_id": "o_1002",
     "user_id": "u_2",
-    "amount": 75.00,
+    "amount": 75.0,
     "currency": "USD",
     "created_at": "2025-08-21T10:10:00Z",
     "items": [
-      { "sku": "p_3", "qty": 1, "price": 75.00 }
+      {
+        "sku": "p_3",
+        "qty": 1,
+        "price": 75.0
+      }
     ],
-    "metadata": { "source": "api", "promo": "SUMMER" }
+    "metadata": {
+      "source": "api",
+      "promo": "SUMMER"
+    }
   },
   {
     "order_id": "o_1003",
     "user_id": "u_3",
-    "amount": 120.00,
+    "amount": 120.0,
     "currency": "USD",
     "created_at": "2025-08-22T09:00:00Z",
     "items": [
-      { "sku": "p_8", "qty": 1, "price": 120.00 }
+      {
+        "sku": "p_8",
+        "qty": 1,
+        "price": 120.0
+      }
     ],
-    "metadata": { "source": "api" }
+    "metadata": {
+      "source": "api"
+    }
   },
   {
     "order_id": "o_1003",
     "user_id": "u_3",
-    "amount": 120.00,
+    "amount": 120.0,
     "currency": "USD",
     "created_at": "2025-08-22T09:00:00Z",
     "items": [
-      { "sku": "p_8", "qty": 1, "price": 120.00 }
+      {
+        "sku": "p_8",
+        "qty": 1,
+        "price": 120.0
+      }
     ],
-    "metadata": { "source": "api" }
+    "metadata": {
+      "source": "api"
+    }
   },
   {
     "order_id": "o_1004",
     "user_id": "u_4",
-    "amount": 90.00,
+    "amount": 90.0,
     "currency": "USD",
     "created_at": "2025-08-23T12:30:00Z",
     "items": [
-      { "sku": "p_4", "qty": 1, "price": 90.00 }
+      {
+        "sku": "p_4",
+        "qty": 1,
+        "price": 90.0
+      }
     ],
     "metadata": null
   },
   {
     "order_id": "o_1005",
     "user_id": "u_5",
-    "amount": 60.00,
+    "amount": 60.0,
     "currency": "USD",
     "created_at": "2025-08-24T18:45:00Z",
     "items": [
-      { "sku": "p_9", "qty": 1 }
+      {
+        "sku": "p_9",
+        "qty": 1
+      }
     ],
-    "metadata": { "source": "api", "promo": null }
+    "metadata": {
+      "source": "api",
+      "promo": null
+    }
   },
   {
     "order_id": "o_1006",
     "user_id": "u_6",
-    "amount": 65.00,
+    "amount": 65.0,
     "currency": "USD",
     "created_at": "2025-08-24T08:15:00Z",
     "items": [
-      { "sku": "p_6", "qty": 1, "price": 65.00 }
+      {
+        "sku": "p_6",
+        "qty": 1,
+        "price": 65.0
+      }
     ],
-    "metadata": { "source": "api" }
+    "metadata": {
+      "source": "api"
+    }
   },
   {
     "order_id": "o_1007",
     "user_id": "u_7",
-    "amount": 40.00,
+    "amount": 40.0,
     "currency": "USD",
     "created_at": "2025-08-26T14:00:00Z",
     "items": [
-      { "sku": "p_7", "qty": 1, "price": 40.00 }
+      {
+        "sku": "p_7",
+        "qty": 1,
+        "price": 40.0
+      }
     ],
-    "metadata": { "source": "api" }
+    "metadata": {
+      "source": "api"
+    }
   },
   {
     "order_id": "o_1008",
     "user_id": "u_8",
-    "amount": 55.00,
+    "amount": 55.0,
     "currency": "USD",
     "created_at": "2025-08-27T11:20:00Z",
     "items": [
-      { "sku": "p_2", "qty": 1, "price": 55.00 }
+      {
+        "sku": "p_2",
+        "qty": 1,
+        "price": 55.0
+      }
     ],
-    "metadata": { "source": "api" }
+    "metadata": {
+      "source": "api"
+    }
   },
   {
     "order_id": "o_1009",
     "user_id": "u_9",
-    "amount": 25.00,
+    "amount": 25.0,
     "currency": "USD",
     "created_at": "2025-08-28T16:50:00Z",
     "items": null,
-    "metadata": { "source": "api" }
+    "metadata": {
+      "source": "api"
+    }
   }
 ]
