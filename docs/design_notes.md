@@ -53,3 +53,7 @@ Por otro lado, tambien estaría la opción de usar Airflow para Orquestar el flu
 Se decidió crear un repositorio de GutHub para este proyecto, de esta forma podemos tener acceso a las distintas versiones y commits que se han realizado y adicional nos sirve para tener una sóla versión del código con las dependencias y librerías que se necesitan para funcionar.
 
 El çódigo se puede correr en Windows generando los entornos virtuales, sin embargo, el uso de Docker mejora la reproducibilidad por mucho debido a que sólo debemos preocuparnos por lanzar la imagen de docker y automaticamente instalará las dependencias necesarias. De esta forma evitamos que en algunos computadores no pueda funcionar, además, permite una integración más fácil a entornos Linux aumentando la posibilidad de usar CI/CD en una futura ocasión para realizar los depliegues.
+
+## 7. Power BI
+
+Se creó un minitableto de Power BI, sin embargo, para que recargue se deben cambiar las rutas, sólo lo hice de comprobación. En producción seguramente la información estará centralizada en la nube en Redshift o en alguna base de datos y el tablero se pegará desde allá.
